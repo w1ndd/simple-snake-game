@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+html{
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #dedede;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.game-area{
+  position: relative;
+  margin: 50px auto;
+  width: 600px;
+  height: 600px;
+  border: 2px solid black;
+  margin-top: 1rem;
+  background-color: #bababa;
+}
+
+.snake-dot, .snake-head{
+  position: absolute;
+  width: 4%;
+  height: 4%;
+  background-color: #52de48;
+  border: 1px solid black;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.snake-head{
+  border-radius: 100%;
+  text-align: center;
+}
+
+.apple{
+  position: absolute;
+  width: 4%;
+  height: 4%;
+  background-color: red;
+  border: 1px solid black;
+  z-index: 1;
+  border-radius: 30%;
+}
+
+.game-settings{
+  width: min(100%, 20rem);
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.button{
+  padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+}
+
+.green{
+  background-color: #52de48;
+}
+
+.red{
+  background-color: #de4857;
+}
+
+.grey{
+  background-color: #8a8a8a;
+}
+
+.game-header{
+  width: min(100%, 30rem);
+  margin-inline: auto;
+  text-align: center;
+  font-size: 1.2rem;
 }
